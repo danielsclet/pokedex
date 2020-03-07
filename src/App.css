@@ -1,38 +1,149 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+input,
+button {
+  font-family: "Maven Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  background-color: rgb(245, 245, 245);
+  min-height: 100vh;
+  padding: 100px;
+  width: 100%;
+}
+
+.app-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-main > img {
+  margin-bottom: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-main .section {
+  background-color: #fff;
+  box-shadow: 0px 2px 4px #ccc;
+  margin-bottom: 15px;
+  padding: 15px;
+  width: 100%;
+}
+
+.app-main .section h2 {
+  margin-bottom: 10px;
+}
+
+.app-main .section ul {
+  list-style-position: inside;
+}
+
+.cardNew {
+  align-items: center;
+  border: 3px dashed rgb(175, 175, 175);
+  color: rgb(175, 175, 175);
+  cursor: pointer;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-weight: bold;
+  height: 350px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0px 15px 15px 0px;
+  text-align: center;
+  transition: 0.2s;
+  width: 250px;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px #ccc;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: center;
+  margin: 0px 15px 15px 0px;
+  position: relative;
+  text-align: center;
+  transition: 0.2s;
+  width: 250px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card svg {
+  color: rgb(175, 175, 175);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 15px;
+}
+
+.card img {
+  margin-bottom: 15px;
+}
+
+.cardNew:hover,
+.card:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.new {
+  background-color: #fff;
+  box-shadow: 0px 2px 4px #ccc;
+  padding: 50px;
+}
+
+.new label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.new input {
+  background-color: rgb(241, 241, 241);
+  border: none;
+  display: block;
+  margin-bottom: 25px;
+  padding: 10px;
+  width: 350px;
+}
+
+.new input[type="submit"] {
+  background-color: deepskyblue;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0px;
+  padding: 10px;
+  width: 350px;
+}
+
+.new a {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
 }
